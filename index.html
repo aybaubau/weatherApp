@@ -7,12 +7,57 @@
   <title>Weather Checker</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <script src="https://use.fontawesome.com/200223ae3d.js"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <nav class="navbar navbar-dark bg-dark">
+    <h4 class="nav navbar-nav navbar-center navbar-brand mb-0 h1">Weather Dashboard</h4>
+  </nav>
+  <div class="d-flex">
+    <div class="bg-light border-right">
+      <div class="sidebar-heading">
+        <h5>Search for a City:</h5>
+        <form id="city-search">
+          <div class="input-group">
+            <input type="text" id="city-input" class="form-control" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="submit" id="search-button" id="button-addon2"><i
+                  class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="list-group list-group-flush" id="buttons-view">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="card col-10">
+          <h2 id=city></h2>
+          <p id="temp"></p>
+          <p id="humidity"></p>
+          <p id="wind-speed"></p>
+          <p id="uv-index"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div id="1" class="card col-md-2 col-md-offset-1"></div>
+        <div id="2" class="card col-md-2"></div>
+        <div id="3" class="card col-md-2"></div>
+        <div id="4" class="card col-md-2"></div>
+        <div id="5" class="card col-md-2"></div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+  <!-- <nav class="navbar navbar-dark bg-dark">
     <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
   </nav>
   <div class="container-fluid">
@@ -46,7 +91,7 @@
       <div id="4" class="card col-2"></div>
       <div id="5" class="card col-2"></div>
     </div>
-  </div>
+  </div> -->
 
 
 
@@ -60,8 +105,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-    <script src="moment.js"></script>
-  <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js" integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
