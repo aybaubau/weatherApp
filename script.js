@@ -84,7 +84,7 @@ $.ajax({
     var date = moment().add(i, 'd').format('L');
     const $date = $(`#${i}`).add('<p>').text(date);
     const $figure = $(`#${i}`).add('<figure>');
-    const $icon = $figure.add('<img>').attr("src", `http://openweathermap.org/img/wn/${forecast[i].weather[0].icon}@2x.png`);
+    const $icon = $figure.add('<img>').attr("src", `https://openweathermap.org/img/wn/${forecast[i].weather[0].icon}@2x.png`);
     $($figure).append($icon);
     const $temp = $(`#${i}`).add('<p>').text('Temp: ' + forecast[i].temp.day);
     const $humidity = $(`#${i}`).add('<p>').text('Humidity: ' + forecast[i].humidity);
