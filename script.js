@@ -48,7 +48,7 @@ function renderButtons(pastSearches) {
 init();
 
 function searchCity(searchCity) {
-  var currentConditions = `http://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=db4ee215f9a9ef59e9a5d2bf7c56adf9&units=imperial`;
+  var currentConditions = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=db4ee215f9a9ef59e9a5d2bf7c56adf9&units=imperial`;
 
   $.ajax({
     url: currentConditions,
@@ -65,7 +65,7 @@ function searchCity(searchCity) {
 };
 
 function getCoordWeather(x, y){
-var coordWeather = `http://api.openweathermap.org/data/2.5/onecall?lat=${x}&lon=${y}&
+var coordWeather = `https://api.openweathermap.org/data/2.5/onecall?lat=${x}&lon=${y}&
 exclude={minutely,hourly}&appid=db4ee215f9a9ef59e9a5d2bf7c56adf9&units=imperial`
 $.ajax({
   url: coordWeather,
